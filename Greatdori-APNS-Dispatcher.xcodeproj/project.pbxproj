@@ -15,6 +15,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8C0856172E73086300447B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C088F232E72E41700447B05 /* Greatdori.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C0C99902E296A8C00549B5C;
+			remoteInfo = DoriKit;
+		};
 		8C088FB72E72E41700447B05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8C088F232E72E41700447B05 /* Greatdori.xcodeproj */;
@@ -123,6 +130,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8C0856182E73086300447B05 /* PBXTargetDependency */,
 			);
 			name = "Greatdori-APNS-Dispatcher";
 			packageProductDependencies = (
@@ -197,6 +205,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C0856182E73086300447B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DoriKit;
+			targetProxy = 8C0856172E73086300447B05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8C088F1B2E72E36D00447B05 /* Debug */ = {
