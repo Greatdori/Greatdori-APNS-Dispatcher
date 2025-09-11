@@ -1,0 +1,20 @@
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  build_run:
+    name: Build & Run
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5.0.0
+      - name: Set Xcode version
+        run: xcode-select -s /Applications/Xcode_26.0.app
+      - name: Build
+        run: |
+          mkdir build
+          xcodebuild -project Greatdori-APNS-Dispatcher.xcodeproj -scheme Greatdori-APNS-Dispatcher -configuration Release -derivedDataPath ./build build
+      - name: Run
+        run: ./build/Build/Products/Release/Greatdori-APNS-Dispatcher
