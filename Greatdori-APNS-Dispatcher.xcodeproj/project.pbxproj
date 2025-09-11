@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C088F222E72E37200447B05 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C088F202E72E37200447B05 /* main.swift */; };
+		8C088FCA2E72E42F00447B05 /* DoriKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C088FB82E72E41700447B05 /* DoriKit.framework */; };
+		8C088FCB2E72E42F00447B05 /* DoriKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C088FB82E72E41700447B05 /* DoriKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C088FD22E72E4D200447B05 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8C088FD12E72E4D200447B05 /* SwiftyJSON */; };
+		8C088FD52E72EFEB00447B05 /* APNS in Frameworks */ = {isa = PBXBuildFile; productRef = 8C088FD42E72EFEB00447B05 /* APNS */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C088FB72E72E41700447B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C088F232E72E41700447B05 /* Greatdori.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C0C99912E296A8C00549B5C;
+			remoteInfo = DoriKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C088F142E72E36D00447B05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8C088FCC2E72E42F00447B05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8C088FCB2E72E42F00447B05 /* DoriKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C088F162E72E36D00447B05 /* Greatdori-APNS-Dispatcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Greatdori-APNS-Dispatcher"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C088F202E72E37200447B05 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8C088F232E72E41700447B05 /* Greatdori.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Greatdori.xcodeproj; path = Greatdori/Greatdori.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C088F132E72E36D00447B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C088FD22E72E4D200447B05 /* SwiftyJSON in Frameworks */,
+				8C088FD52E72EFEB00447B05 /* APNS in Frameworks */,
+				8C088FCA2E72E42F00447B05 /* DoriKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C088F0D2E72E36D00447B05 = {
+			isa = PBXGroup;
+			children = (
+				8C088F232E72E41700447B05 /* Greatdori.xcodeproj */,
+				8C088F212E72E37200447B05 /* Greatdori-APNS-Dispatcher */,
+				8C088FC92E72E42F00447B05 /* Frameworks */,
+				8C088F172E72E36D00447B05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C088F172E72E36D00447B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C088F162E72E36D00447B05 /* Greatdori-APNS-Dispatcher */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C088F212E72E37200447B05 /* Greatdori-APNS-Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				8C088F202E72E37200447B05 /* main.swift */,
+			);
+			path = "Greatdori-APNS-Dispatcher";
+			sourceTree = "<group>";
+		};
+		8C088F242E72E41700447B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C088FB82E72E41700447B05 /* DoriKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C088FC92E72E42F00447B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C088F152E72E36D00447B05 /* Greatdori-APNS-Dispatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C088F1D2E72E36D00447B05 /* Build configuration list for PBXNativeTarget "Greatdori-APNS-Dispatcher" */;
+			buildPhases = (
+				8C088F122E72E36D00447B05 /* Sources */,
+				8C088F132E72E36D00447B05 /* Frameworks */,
+				8C088F142E72E36D00447B05 /* CopyFiles */,
+				8C088FCC2E72E42F00447B05 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Greatdori-APNS-Dispatcher";
+			packageProductDependencies = (
+				8C088FD12E72E4D200447B05 /* SwiftyJSON */,
+				8C088FD42E72EFEB00447B05 /* APNS */,
+			);
+			productName = "Greatdori-APNS-Dispatcher";
+			productReference = 8C088F162E72E36D00447B05 /* Greatdori-APNS-Dispatcher */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C088F0E2E72E36D00447B05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					8C088F152E72E36D00447B05 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 8C088F112E72E36D00447B05 /* Build configuration list for PBXProject "Greatdori-APNS-Dispatcher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C088F0D2E72E36D00447B05;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C088F172E72E36D00447B05 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8C088F242E72E41700447B05 /* Products */;
+					ProjectRef = 8C088F232E72E41700447B05 /* Greatdori.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8C088F152E72E36D00447B05 /* Greatdori-APNS-Dispatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8C088FB82E72E41700447B05 /* DoriKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DoriKit.framework;
+			remoteRef = 8C088FB72E72E41700447B05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C088F122E72E36D00447B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C088F222E72E37200447B05 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C088F1B2E72E36D00447B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = B57D8PP775;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C088F1C2E72E36D00447B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = B57D8PP775;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8C088F1E2E72E36D00447B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B57D8PP775;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = ./;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8C088F1F2E72E36D00447B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B57D8PP775;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = ./;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C088F112E72E36D00447B05 /* Build configuration list for PBXProject "Greatdori-APNS-Dispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C088F1B2E72E36D00447B05 /* Debug */,
+				8C088F1C2E72E36D00447B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C088F1D2E72E36D00447B05 /* Build configuration list for PBXNativeTarget "Greatdori-APNS-Dispatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C088F1E2E72E36D00447B05 /* Debug */,
+				8C088F1F2E72E36D00447B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WindowsMEMZ/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server-community/APNSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C088FD12E72E4D200447B05 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		8C088FD42E72EFEB00447B05 /* APNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */;
+			productName = APNS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8C088F0E2E72E36D00447B05 /* Project object */;
+}
