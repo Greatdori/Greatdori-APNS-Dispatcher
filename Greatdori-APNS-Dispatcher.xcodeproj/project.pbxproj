@@ -345,8 +345,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					./,
 					./PackageFrameworks/,
-					"@rpath/",
-					"@rpath/PackageFrameworks/",
+					"@executable_path/",
+					"@executable_path/PackageFrameworks/",
+					"@executable_path/../",
+					"@executable_path/../PackageFrameworks/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,8 +368,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					./,
 					./PackageFrameworks/,
-					"@rpath/",
-					"@rpath/PackageFrameworks/",
+					"@executable_path/",
+					"@executable_path/PackageFrameworks/",
+					"@executable_path/../",
+					"@executable_path/../PackageFrameworks/",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
