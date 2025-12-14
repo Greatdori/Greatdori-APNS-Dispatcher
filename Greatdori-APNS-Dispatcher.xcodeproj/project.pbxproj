@@ -43,6 +43,14 @@
 		8C71D0B62EEF0B7800E8645B /* DoriKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DoriKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8C71D0BC2EEF0C0700E8645B /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = .github;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		8C088F132E72E36D00447B05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -60,6 +68,7 @@
 		8C088F0D2E72E36D00447B05 = {
 			isa = PBXGroup;
 			children = (
+				8C71D0BC2EEF0C0700E8645B /* .github */,
 				8C088F212E72E37200447B05 /* Greatdori-APNS-Dispatcher */,
 				8C088FC92E72E42F00447B05 /* Frameworks */,
 				8C088F172E72E36D00447B05 /* Products */,

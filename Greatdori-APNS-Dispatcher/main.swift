@@ -18,7 +18,7 @@ let dateResponse = try! JSON(data: urlData("https://api.push.greatdori.com/datem
 let timestamp = dateResponse["timestamp"].double!
 if timestamp < 100 { fatalError("Timestamp is too low") }
 
-let latestNews = await DoriFrontend.News.list()!
+let latestNews = await _DoriFrontend.News.list()!
 let newsDiff = latestNews.prefix { item in
     item.timestamp.timeIntervalSince1970 > timestamp
 }
