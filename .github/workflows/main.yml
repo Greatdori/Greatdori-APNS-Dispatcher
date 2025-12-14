@@ -21,20 +21,7 @@ jobs:
           path: DoriKit
           submodules: recursive
       - name: Generate workspace
-        run: |
-          mkdir Dispatcher.xcworkspace
-          cat <<EOF > Dispatcher.xcworkspace/contents.xcworkspacedata
-          <?xml version="1.0" encoding="UTF-8"?>
-          <Workspace
-             version = "1.0">
-             <FileRef
-                location = "group:DoriKit/DoriKit.xcodeproj">
-             </FileRef>
-             <FileRef
-                location = "group:Greatdori-APNS-Dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
-             </FileRef>
-          </Workspace>
-          EOF
+        run: mv Greatdori-APNS-Dispatcher/Dispatcher.xcworkspace ./
       - name: Create build folder
         run: mkdir build
       - name: Restore build cache
