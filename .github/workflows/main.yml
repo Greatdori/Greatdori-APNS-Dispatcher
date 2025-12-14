@@ -23,10 +23,15 @@ jobs:
       - name: Generate workspace
         run: |
           cat <<EOF > Dispatcher.xcworkspace
-          <?xml version="1.0" encoding="UTF-8"?>
-          <Workspace version="1.0">
-            <FileRef location="group:DoriKit/DoriKit.xcodeproj"/>
-            <FileRef location="group:dispatcher/Greatdori-APNS-Dispatcher.xcodeproj"/>
+          <?xml version="1.0" encoding="UTF-8"?>                                                    
+          <Workspace
+             version = "1.0">
+             <FileRef
+                location = "group:DoriKit/DoriKit.xcodeproj">
+             </FileRef>
+             <FileRef
+                location = "group:dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
+             </FileRef>
           </Workspace>
           EOF
       - name: Create build folder
