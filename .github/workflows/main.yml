@@ -31,10 +31,9 @@ jobs:
                 location = "group:DoriKit/DoriKit.xcodeproj">
              </FileRef>
              <FileRef
-                location = "group:dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
+                location = "group:dispatcher/Greatdori-APNS-Dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
              </FileRef>
           </Workspace>
-          
           EOF
       - name: Create build folder
         run: mkdir build
