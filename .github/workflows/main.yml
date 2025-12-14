@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.0.1
         with:
-          path: dispatcher
+          path: Greatdori-APNS-Dispatcher
       - name: Remove runner local related libs
         run: brew remove --ignore-dependencies libssh2
       - name: Checkout DoriKit
@@ -31,7 +31,7 @@ jobs:
                 location = "group:DoriKit/DoriKit.xcodeproj">
              </FileRef>
              <FileRef
-                location = "group:dispatcher/Greatdori-APNS-Dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
+                location = "group:Greatdori-APNS-Dispatcher/Greatdori-APNS-Dispatcher.xcodeproj">
              </FileRef>
           </Workspace>
           EOF
