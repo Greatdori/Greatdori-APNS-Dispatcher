@@ -1,4 +1,5 @@
 {
+  "originHash" : "88ca1591a82a20c19b4922f911ad745b6ec1efce4938ddd017f086087d13cc18",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -28,30 +29,12 @@
       }
     },
     {
-      "identity" : "sdwebimage",
+      "identity" : "dorikit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "location" : "https://github.com/Greatdori/DoriKit",
       "state" : {
-        "revision" : "34cf2423a2c4088d06a3b08655603b5bc3eeeb3a",
-        "version" : "5.21.2"
-      }
-    },
-    {
-      "identity" : "sdwebimagesvgcoder",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SDWebImage/SDWebImageSVGCoder",
-      "state" : {
-        "revision" : "85b5d58ad02c207c496fa34426dc6560d6ae32f0",
-        "version" : "1.8.0"
-      }
-    },
-    {
-      "identity" : "sdwebimageswiftui",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
-      "state" : {
-        "revision" : "451c6dfd5ecec2cf626d1d9ca81c2d4a60355172",
-        "version" : "3.1.3"
+        "branch" : "main",
+        "revision" : "dcdf82f8283285310a1acc5acefb802e0005d31b"
       }
     },
     {
@@ -61,15 +44,6 @@
       "state" : {
         "revision" : "87e50f483c54e6efd60e885f7f5aa946cee68023",
         "version" : "1.2.1"
-      }
-    },
-    {
-      "identity" : "swift-argument-parser",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser.git",
-      "state" : {
-        "revision" : "309a47b2b1d9b5e991f36961c983ecec72275be3",
-        "version" : "1.6.1"
       }
     },
     {
@@ -244,23 +218,14 @@
       }
     },
     {
-      "identity" : "swiftui-introspect",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/siteline/SwiftUI-Introspect",
-      "state" : {
-        "revision" : "807f73ce09a9b9723f12385e592b4e0aaebd3336",
-        "version" : "1.3.0"
-      }
-    },
-    {
       "identity" : "swiftyjson",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/WindowsMEMZ/SwiftyJSON",
+      "location" : "https://github.com/SwiftyJSON/SwiftyJSON",
       "state" : {
-        "revision" : "8719fb79155653520cf5e48586bf1c8aa1fe3f87",
+        "revision" : "af76cf3ef710b6ca5f8c05f3a31307d44a3c5828",
         "version" : "5.0.2"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

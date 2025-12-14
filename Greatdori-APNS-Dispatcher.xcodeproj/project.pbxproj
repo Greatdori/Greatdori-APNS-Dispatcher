@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8C088F222E72E37200447B05 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C088F202E72E37200447B05 /* main.swift */; };
-		8C088FD22E72E4D200447B05 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8C088FD12E72E4D200447B05 /* SwiftyJSON */; };
 		8C088FD52E72EFEB00447B05 /* APNS in Frameworks */ = {isa = PBXBuildFile; productRef = 8C088FD42E72EFEB00447B05 /* APNS */; };
-		8C71D0B72EEF0B7800E8645B /* DoriKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71D0B62EEF0B7800E8645B /* DoriKit.framework */; };
-		8C71D0B82EEF0B7800E8645B /* DoriKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C71D0B62EEF0B7800E8645B /* DoriKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C719D0F2EEF31DD00E8645B /* DoriKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C719D0E2EEF31DD00E8645B /* DoriKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,17 +21,6 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-		};
-		8C71D0B92EEF0B7800E8645B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8C71D0B82EEF0B7800E8645B /* DoriKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -56,8 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C71D0B72EEF0B7800E8645B /* DoriKit.framework in Frameworks */,
-				8C088FD22E72E4D200447B05 /* SwiftyJSON in Frameworks */,
+				8C719D0F2EEF31DD00E8645B /* DoriKit in Frameworks */,
 				8C088FD52E72EFEB00447B05 /* APNS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +95,6 @@
 				8C088F122E72E36D00447B05 /* Sources */,
 				8C088F132E72E36D00447B05 /* Frameworks */,
 				8C088F142E72E36D00447B05 /* CopyFiles */,
-				8C71D0B92EEF0B7800E8645B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,8 +102,8 @@
 			);
 			name = "Greatdori-APNS-Dispatcher";
 			packageProductDependencies = (
-				8C088FD12E72E4D200447B05 /* SwiftyJSON */,
 				8C088FD42E72EFEB00447B05 /* APNS */,
+				8C719D0E2EEF31DD00E8645B /* DoriKit */,
 			);
 			productName = "Greatdori-APNS-Dispatcher";
 			productReference = 8C088F162E72E36D00447B05 /* Greatdori-APNS-Dispatcher */;
@@ -149,8 +134,8 @@
 			mainGroup = 8C088F0D2E72E36D00447B05;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */,
+				8C719D0D2EEF31DD00E8645B /* XCRemoteSwiftPackageReference "DoriKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8C088F172E72E36D00447B05 /* Products */;
@@ -364,14 +349,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WindowsMEMZ/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.2;
-			};
-		};
 		8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swift-server-community/APNSwift.git";
@@ -380,18 +357,26 @@
 				minimumVersion = 6.1.0;
 			};
 		};
+		8C719D0D2EEF31DD00E8645B /* XCRemoteSwiftPackageReference "DoriKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Greatdori/DoriKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8C088FD12E72E4D200447B05 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8C088FD02E72E4D200447B05 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
 		8C088FD42E72EFEB00447B05 /* APNS */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8C088FD32E72EFEB00447B05 /* XCRemoteSwiftPackageReference "APNSwift" */;
 			productName = APNS;
+		};
+		8C719D0E2EEF31DD00E8645B /* DoriKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C719D0D2EEF31DD00E8645B /* XCRemoteSwiftPackageReference "DoriKit" */;
+			productName = DoriKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
