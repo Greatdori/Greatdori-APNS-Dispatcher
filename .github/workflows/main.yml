@@ -10,18 +10,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.1
-        with:
-          path: Greatdori-APNS-Dispatcher
       - name: Remove runner local related libs
         run: brew remove --ignore-dependencies libssh2
       - name: Checkout DoriKit
-        uses: actions/checkout@v6.0.1
-        with:
-          repository: Greatdori/DoriKit
-          path: DoriKit
-          submodules: recursive
+        run: |
+          cd ../
+          git clone https://github.com/Greatdori/DoriKit.git
+      - name: Update submodules
+        run: |
+          cd ../DoriKit
+          git submodule update --init --recursive
       - name: Generate workspace
-        run: mv Greatdori-APNS-Dispatcher/Dispatcher.xcworkspace ./
+        run: mv ./Dispatcher.xcworkspace ../
       - name: Create build folder
         run: mkdir build
       - name: Restore build cache
@@ -31,7 +31,7 @@ jobs:
           path: ./build
           key: ${{ runner.os }}-build-cache
       - name: Build
-        run: xcodebuild -workspace Dispatcher.xcworkspace -scheme Greatdori-APNS-Dispatcher -configuration Release -derivedDataPath ./build build -quiet
+        run: xcodebuild -workspace ../Dispatcher.xcworkspace -scheme Greatdori-APNS-Dispatcher -configuration Release -derivedDataPath ./build build -quiet
       - name: Run
         env:
           TOKEN_LIST_PWD: ${{ secrets.TOKEN_LIST_PWD }}
